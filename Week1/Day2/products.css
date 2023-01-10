@@ -84,7 +84,40 @@ body {
   color: grey;
 }
 
-.blue {
-    color: rgb(65, 212, 238);
+h3 {
+    color:rgb(25, 179, 240);
     font-size: 20px;
+    text-align: center;
+}
+
+span {
+    text-decoration: line-through;
+    color: grey;
+    font-size: 16px;
+}
+
+.green{
+    border-radius: 50%;
+    background-color: green;
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.new {
+    color: white;
+    font-weight: bold;
+    padding-top: 22px;
+    padding-left: 10px;
+}
+
+.red
+{
+    border-radius: 50%;
+    background-color: red;
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
