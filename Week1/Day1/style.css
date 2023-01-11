@@ -1,0 +1,35 @@
+.yellow {
+    background-color: yellow;
+}
+
+.cat {
+    margin-left: 30px;
+    text-decoration: underline;
+}
+.media {
+    text-align: center;
+}
+
+.red {
+    border: 3px solid red;
+    color: red;
+    width: 1200px;
+    margin-left: 400px;
+    text-align: center;
+  
+}
+
+td, th, tr {
+    border: 2px solid black;
+}
+
+table {
+    margin-left: 400px;
+}
+img {
+    border: 15px solid salmon;
+}
+
+.lion {
+    text-align: center;
+}
