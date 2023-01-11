@@ -148,17 +148,17 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
-  */
-@media screen and (min-width: 480px)and (max-width: 1024px){
-  .flex-container {
-    display: flex;
-    height: 800px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: lightgray;
-    margin-top: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-bottom: -30px;
+  
+  @media screen and (min-width: 180px)and (max-width: 1024px){
+    .flex-container {
+      display: flex;
+      height: 1000px;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      background-color: lightgray;
+      margin-top: 10px;
+      margin-left: -10px;
+      margin-right: -10px;
+      margin-bottom: -30px;
+    }
   }
-}
