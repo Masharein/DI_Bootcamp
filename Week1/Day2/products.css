@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    margin: 50px;
 }
 
 .container-second {
@@ -20,20 +21,26 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    margin: 50px;
 }
+
 .container-third {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    margin: 50px;
 }
+
 
 .container-fourth {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    margin: 50px;
 }
+
 
 .img-1 {
     background-image: url(image1.png);
@@ -42,6 +49,9 @@ body {
     width: 300px;
     height: 450px;
     margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .img-2 {
@@ -51,6 +61,9 @@ body {
     width: 300px;
     height: 450px;
     margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .img-3 {
@@ -60,6 +73,9 @@ body {
     width: 300px;
     height: 450px;
     margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .img-4 {
@@ -69,6 +85,9 @@ body {
     width: 300px;
     height: 450px;
     margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .button {
@@ -101,23 +120,32 @@ span {
     background-color: green;
     width: 60px;
     height: 60px;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin: 10px;
+    
+    
 }
 
 .new {
     color: white;
     font-weight: bold;
-    padding-top: 22px;
-    padding-left: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    
 }
 
-.red
-{
+.red {
     border-radius: 50%;
     background-color: red;
     width: 60px;
     height: 60px;
-    margin-top: 5px;
-    margin-left: 5px;
+    display: flex;
+    margin: 10px;
+}
+
+.discount {
+    color: white;
+    font-weight: bold;
+    margin: 15px;
+    margin-top: 20px;
+    font-weight: bolder;
 }
