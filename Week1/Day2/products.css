@@ -8,7 +8,7 @@ body {
     justify-content: space-evenly;
 }
 
-.container-first {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,34 +16,7 @@ body {
     margin: 50px;
 }
 
-.container-second {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 50px;
-}
-
-.container-third {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 50px;
-}
-
-
-.container-fourth {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 50px;
-}
-
-
-.img-1 {
-    background-image: url(image1.png);
+.img {
     background-size:cover;
     background-repeat: no-repeat;
     width: 300px;
@@ -53,14 +26,15 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.img-1 {
+    background-image: url(image1.png);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-.img-2 {
+ .img-2 {
     background-image: url(image2.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 450px;
-    margin: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -68,11 +42,6 @@ body {
 
 .img-3 {
     background-image: url(image3.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 450px;
-    margin: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -80,11 +49,6 @@ body {
 
 .img-4 {
     background-image: url(image4.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 450px;
-    margin: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -121,8 +85,6 @@ span {
     width: 60px;
     height: 60px;
     margin: 10px;
-    
-    
 }
 
 .new {
