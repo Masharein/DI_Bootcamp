@@ -1,55 +1,93 @@
 ul {
    list-style-type: none;
-   margin: 0;
+   margin: -10px;
    padding: 0;
+   overflow: hidden;
+   
  }
  
  li {
-   display: inline;
+   float: left;
  }
  
-@media screen and (min-width: 768px) {
-    body { 
-       font-size: 25px; 
-    }
+ li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 30px;
+   text-decoration: none;
+   font-size: 30px;
+   font-weight: bold;
+ }
+ 
+
+ body {
+   background-image: url(168069577-2f570d08-61d3-49d8-b7dd-c4b9192aaf68.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ .flex-container {
+  width: auto;
+  margin-top: 300px;
+  margin-left: 30px;
+  font-family:'Times New Roman', Times, serif'
+
+ }
+
+ h1 {
+   font-weight: 600px;
+   font-size: 60px;
+ }
+
+ text {
+   width: 600px;
+   font-weight: bold;
+   font-size: 20px;
+ }
+
+ @media screen and (min-width: 768px) {
+   body { 
+      font-size: 25px; 
+   }
 }
 
- @media screen and (min-width: 600px)and (max-width: 768px){
-    body { 
-       font-size: 35px; 
-    }
+@media screen and (min-width: 600px)and (max-width: 768px){
+   body { 
+      font-size: 35px; 
+   }
 }
 
 @media screen and (max-width: 600px) {
-   .navbar {
-    background-color: yellow;
-    color: black;
-  }
+  ul, li a {
+   background-color: yellow;
+   color: black;
+ }
 } 
 
 @media screen and (min-width: 480px)and (max-width: 1024px){
-   .navbar {
-    background-color: lightgreen;
-    color: black;
-  }
+  ul, li a {
+   background-color: lightgreen;
+   color: black;
+ }
 } 
 
-@media screen and (min-width: 992px) {
-   .navbar {
-    background-color: red;
-    color: white;
-  }
+@media screen and (min-width: 992px) and (max-width: 1200px){
+  ul, li a {
+   background-color: red;
+   color: white;
+ }
 } 
 
 @media screen and (min-width: 1200px) {
-   .navbar {
-    background-color: black;
-    color: white;
-  }
+  ul, li a {
+   background-color: black;
+   color: white;
+ }
 } 
 
 @media screen and (min-width: 992px) {
-h2 {
-   float:left;
+h1 {
+  float:left;
 }
 }
