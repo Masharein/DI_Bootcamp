@@ -1,0 +1,55 @@
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ li {
+   display: inline;
+ }
+ 
+@media screen and (min-width: 768px) {
+    body { 
+       font-size: 25px; 
+    }
+}
+
+ @media screen and (min-width: 600px)and (max-width: 768px){
+    body { 
+       font-size: 35px; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+   .navbar {
+    background-color: yellow;
+    color: black;
+  }
+} 
+
+@media screen and (min-width: 480px)and (max-width: 1024px){
+   .navbar {
+    background-color: lightgreen;
+    color: black;
+  }
+} 
+
+@media screen and (min-width: 992px) {
+   .navbar {
+    background-color: red;
+    color: white;
+  }
+} 
+
+@media screen and (min-width: 1200px) {
+   .navbar {
+    background-color: black;
+    color: white;
+  }
+} 
+
+@media screen and (min-width: 992px) {
+h2 {
+   float:left;
+}
+}
