@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+ .container-1 {
+    display: flex;
+    flex-direction: column;
+    
+ }
+
+.yellow {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin: 30px;
+
+}
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.yellow-1 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin: 80px;
+}
