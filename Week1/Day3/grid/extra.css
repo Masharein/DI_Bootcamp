@@ -1,0 +1,30 @@
+.grid {
+    display: grid;
+    grid-template-rows: repeat(5, 120px); 
+    grid-template-columns: repeat(5, 120px);
+    grid-column-gap:0px;
+    grid-row-gap:0px;
+}
+.grid-box {
+    display: grid;
+    grid-template-rows: repeat(3, 40px); 
+    grid-template-columns: repeat(3, 40px);
+    grid-column-gap:0px;
+    grid-row-gap:0px;
+}
+.grid-box-last {
+    display: grid;
+    grid-template-rows: repeat(1, 40px); 
+    grid-template-columns: repeat(15, 40px);
+    grid-column-gap:0px;
+    grid-row-gap:0px;
+}
+.orange {
+    background-color: orange;
+}
+.pink {
+    background-color: pink;
+}
+.brown{
+    background-color: brown;
+}
