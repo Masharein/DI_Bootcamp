@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    border: 2px solid red;
+    width: 100%;
+   
+}
+.row {
+    border: 2px solid blue;
+    width: 100%;
+    height: 100px;
+}
+    
+.col {
+    border: 2px solid rgb(83, 17, 48);
+    width: 100%;
+    height: 100px;
+}
+
+.button {
+    width: 100%;
+}
