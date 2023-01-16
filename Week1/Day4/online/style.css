@@ -1,0 +1,35 @@
+body {
+  margin: auto 0;
+  font-family: Arial;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    margin-top: 170px;
+    
+}
+.text {
+    color: rgb(187, 178, 178);
+    font-weight: bold;
+    
+  
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #f4623a;
+  border-color: #f4623a;
+  border-radius: 10%;
+  box-shadow: 0 0 0 0.25rem rgba(246, 122, 88, 0.5);
+
+}
