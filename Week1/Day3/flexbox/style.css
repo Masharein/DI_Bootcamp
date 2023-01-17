@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    border: 2px solid green;
+    position: relative;
+}
+
+/* position relative */
+/* to the initial position of the product Link */
+#productLink {
+    position: relative;
+    bottom: 20px;
+    left: 383px;
+}
+
+/* the about link moves relatively from the navbar */
+/* navbar has a position relative */
+#aboutLink {
+    position: absolute;
+    top: 17px;
+    right: 13px;
+}
+
+section {
+    border:2px solid red;
+}
+
+.product {
+    /* width: 33%; */
+    /* display: inline-block; */
+    margin: 10px;
+    /* outline: 2px solid green; */
+    padding: 15px;
+}
+
+
+div {
+    border: 2px solid black;
+}
+
+img {
+    width: 20%;
+}
+
+#sectionScroll {
+    width: 400px; 
+    height: 200px;
+    overflow: scroll;
+    position: relative;
+}
+
+/* position fixed */
+#sectionScroll nav {
+    position: fixed;
+    background-color: green;
+    width: 100px;
+}
+
+/* body {
+    background-color: aquamarine;
+} */
+
+
+@media all and (max-width: 480px) {
+    body {
+        background-color: pink;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) { 
+    body {
+        background-color: yellowgreen;
+    }
+
+    .product{
+        display: inline-block;
+        width: 200px;
+    }
+}

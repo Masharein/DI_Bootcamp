@@ -84,9 +84,10 @@ a {
 }
 
 
-p {
+p, ul {
     line-height: normal;
     font-size: 18px;
+    font-family:  'Sulphur Point', sans-serif;
     
 }
 
@@ -103,13 +104,10 @@ p {
 
 
 @media all and (max-width: 922px) { 
-
-    
-
     .container {
-        
-        grid-template-rows: repeat(2, 1fr); 
-        grid-template-columns: 1fr;
+    
+ grid-template-rows: repeat(2, 1fr); 
+ grid-template-columns: 1fr;
       
     }
 }

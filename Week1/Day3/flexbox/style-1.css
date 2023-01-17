@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+section {
+    border: 2px solid black;
+    display:flex;
+    flex-direction: column;
+    height:100px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product {
+    border: 2px solid red;
+    height: 200px;
+    width: 100px;
+}

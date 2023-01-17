@@ -7,36 +7,39 @@
     }
     
     .box-1 {
-    width: 30%;
-    height: 100px;
+    /* width: 30%;
+    height: 100px; */
     background-color: violet;
     text-align: center;
     color: white;
     font-size: 50px;
     font-weight: bold;
     padding-top: 40px;
+    flex-grow: 1;
     }
     
     
     .box-2 {
-        width: 100%;
-        height: 100px;
+        /* width: 100%;
+        height: 100px; */
         background-color: rgb(124, 124, 221);
         text-align: center;
         color: white;
         font-size: 50px;
         font-weight: bold;
         padding-top: 40px;
+        flex-grow: 2;
         }
     
     .box-3 {
-            width: 100%;
-            height: 100px;
+            /* width: 100%;
+            height: 100px; */
             background-color: blueviolet;
             text-align: center;
             color: white;
             font-size: 50px;
             font-weight: bold;
             padding-top: 40px;
+            flex-grow: 2;
             }
             
