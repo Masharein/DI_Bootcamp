@@ -238,7 +238,6 @@ div.can:hover {
 @media all and (max-width: 1790px) {
   ul {
     display: none;
-    width: 0;
   }
   
   .right {
@@ -246,5 +245,3 @@ div.can:hover {
     padding: 0;
     height: 0;
   }
-    
-}
