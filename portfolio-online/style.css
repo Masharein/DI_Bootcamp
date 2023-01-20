@@ -493,7 +493,7 @@ h3.my-profession
 
 .about .about-content .timeline .timeline-item:last-child
 {
-    padding-bottom: 0;
+    padding-bottom: 0px;
 }
 .about .about-content .timeline .timeline-item::before
 {
@@ -507,5 +507,84 @@ h3.my-profession
 }
 .about .about-content .timeline .circle-dot
 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+.about .about-content .timeline .timeline-date
+{
+    font-weight: 400px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+.about .about-content .timeline .timeline-date .fa 
+{
+    margin-right: 5px;
+}
+.about .about-content .timeline .timeline-title 
+{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+.about .about-content .timeline .timeline-text
+{
+    line-height: 30px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700)
+}
+/* portfolio */
+.portfolio .container
+{
+    padding-bottom: 40px;
     
+}
+
+.portfolio .portfolio-heading
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.portfolio .portfolio-heading h2
+{
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+.portfolio .portfolio-item 
+{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.portfolio .portfolio-item-inner 
+{
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+} 
+
+.portfolio .portfolio-item-inner .portfolio-img img 
+{
+    width:100%;
+    display: block;
+}
+/* contacts */
+.contact-title 
+{
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
 }
