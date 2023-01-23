@@ -1,3 +1,11 @@
+// For each expression, predict what you think the output will be in a comment (//) without first running the command.
+// Of course, explain each prediction.
+// Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
+// What will be the outcome of a + b in the first expression ?
+// What will be the outcome of a + b in the second expression ?
+// What is the value of c?
+
+// Analyse the code below, what will be the outcome?
 let c;
 let a = 34;
 let b = 21;

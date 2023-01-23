@@ -1,3 +1,8 @@
+// For each expression, predict what you think the output will be in a comment (//) without first running the command.
+// Of course, explain each prediction.
+// Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
+
+
 console.log(typeof(15));
 // Prediction: number
 // Actual: number
@@ -31,7 +36,7 @@ console.log("hamburgers" - "s")
 // Actual: NaN
 
 console.log("1" + "3")
-// Prediction: 13 in this situaton we can do an operation like with 2 numbers
+// Prediction: 13 in this situaton we can do an operation like with 2 strings
 // Actual: 13
 
 console.log("1" - "3") 

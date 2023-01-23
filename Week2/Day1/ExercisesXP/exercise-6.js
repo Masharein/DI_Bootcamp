@@ -1,5 +1,6 @@
+// What is the output of each of the expressions below?
 console.log(5 + "34") 
-// Prediction: 534 in this situaton we can do an operation like with 2 numbers
+// Prediction: 534 in this situaton we can do an operation like number + string
 // Actual: 534
 
 console.log(5 - "4")
