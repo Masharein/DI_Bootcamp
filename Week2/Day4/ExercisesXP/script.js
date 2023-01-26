@@ -138,20 +138,17 @@ const prices = {
 
 
 const shoppingList = ['banana', 'orange', 'apple']
-function myBill(){
-    let sum = 0;
-    for (let i of shoppingList) {
-        if (i in stock && stock[i] > 0){
-            sum += prices[i];
-            console.log(`The price of ${i} is ${prices[i]}`);
-            stock[i]=stock[i]-1;
+function myBill() {
+    let totalPrice = 0;
+    for(let fruit of shopping) {
+        if (stock[fruit] > 0) {
+            const currentPrice = prices[fruit];
+            totalPrice += currentPrice;
         }
     }
-    console.log(`Your total order is: ${sum}`)
-    console.log(`Now in stock:`)
-    console.log(stock)
+    return totalPrice;
 }
-myBill()
+
 // Exercise 5 : What’s In My Wallet ?
 // Instructions
 // Note: Read the illustration (point 4), while reading the instructions
@@ -262,7 +259,7 @@ function changeEnough (itemPrice, amountOfChange=[7,2,1,3]){
 
 // Bonus: Instead of using a prompt inside the 3 first functions, only use a prompt inside the totalVacationCost() function. You need to change the 3 first functions, accordingly.
 
-var askPrompt = prompt("how many nights?");
+const askPrompt = prompt("how many nights?");
 function hotelCost() {
     if (askPrompt === Number(askPrompt)){
         console.log(askPrompt * 140);
