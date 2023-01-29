@@ -56,7 +56,7 @@
 
 function singSong() {
     let bottles = prompt("Enter a number to begin counting down bottles:");
-    let subtractedNum = 0;
+    let subtractedNum = 1;
   
     for (let i = bottles; i >= 0; i--) {
       if (bottles === 1) {
