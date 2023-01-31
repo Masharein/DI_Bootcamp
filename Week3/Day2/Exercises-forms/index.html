@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+        body {
+            padding-top:30px;
+        } 
+
+        label,input {
+            display:block;
+        }  
+    </style> 
+</head>
+<body>
+    <p>Input radius value and get the volume of a sphere.</p> 
+    <h1>SPHERE</h1>
+        <form id="MyForm"> 
+            <label for="radius">Radius</label><input type="text" name="radius" id="radius"> 
+            <label for="volume">Volume</label><input type="text" name="volume" id="volume"> 
+            <input type="submit" value="Calculate" id="submit">    
+        </form> 
+    <h1>RECTANGLE</h1>
+        <form id="MySecondForm"> 
+            <label for="radius">Radius</label><input type="text" name="radius" id="length"> 
+            <label for="volume">Volume</label><input type="text" name="volume" id="volumeRectangle"> 
+            <input type="submit" value="Calculate" id="submit">    
+        </form> 
+    <h1>GAME</h1>    
+        <form id="libform">
+            <label for="noun">Noun:</label><input type="text" id="noun"><br>
+            <label for="adjective">Adjective:</label><input type="text" id="adjective"><br>
+            <label for="person">Someone's Name:</label><input type="text" id="person"><br>
+            <label for="verb">Verb:</label><input type="text" id="verb"><br>
+            <label for="place">A place:</label><input type="text" id="place"><br>
+            <button id="lib-button">Lib it!</button>
+        </form>
+    
+        <script src="script.js"></script>
+</body>
+</html>
