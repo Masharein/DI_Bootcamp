@@ -11,14 +11,14 @@
 
 // Invoke the cloneGroceries function.
 
-let client = "Betty";
+let client = "John";
 
 const groceries = {
     fruits : ["pear", "apple", "banana"],
     vegetables: ["tomatoes", "cucumber", "salad"],
-    totalPrice : "35$",
+    totalPrice : "20$",
     other : {
-        payed : false,
+        payed : true,
         meansOfPayment : ["cash", "creditCard"]
     }
 }
@@ -32,8 +32,11 @@ displayGroceries ()
 
 const cloneGroceries = () => {
     let user = client;
+    client = "Betty"
     console.log(user)
     let shopping = groceries
+    groceries.totalPrice = '35$'
+    groceries.other.payed = false
     console.log(shopping)
 }
 cloneGroceries()
