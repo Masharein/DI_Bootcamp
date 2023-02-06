@@ -67,6 +67,17 @@ findWeightThird(5)
 // Invoke the inner function ONCE inside the outer function. Then invoke the outer function in the global scope.
 
 
+function makeJuice(size) {
+    function addIngredients (firstIngredient, secondIngredient, thirdIngredient) {
+        const div = document.createElement("div")
+        const body = document.body
+        div.innerText = (`The client wants a ${size} juice, containing ${firstIngredient}, ${secondIngredient}, ${thirdIngredient}`)
+        body.appendChild(div)
+    }
+    addIngredients('apple', 'banana', 'orange')
+}
+makeJuice('big')
+
 // Part II:
 // In the makeJuice function, create an empty array named ingredients.
 
@@ -75,3 +86,36 @@ findWeightThird(5)
 // Create a new inner function named displayJuice that displays on the DOM a sentence like The client wants a <size drink> juice, containing <first ingredient>, <second ingredient>, <third ingredient>". Use the forEach method.
 
 // The client wants 6 ingredients in his juice, therefore, invoke the addIngredients function TWICE. Then invoke once the displayJuice function. Finally, invoke the makeJuice function in the global scope.
+
+
+
+
+function makeJuice(size) {
+    const ingredients = [];
+
+    function addIngredients(firstIngredient, secondIngredient, thirdIngredient) {
+        ingredients.push(firstIngredient, secondIngredient, thirdIngredient);
+    }
+
+    function displayJuice() {
+        const div = document.createElement("div");
+        const body = document.body;
+        div.innerText = `The client wants a ${size} juice, containing `;
+
+        ingredients.forEach((ingredient, index) => {
+            div.innerText += ingredient;
+            if (index !== ingredients.length - 1) {
+                div.innerText += ', ';
+            }
+        });
+
+        body.appendChild(div);
+    }
+
+    addIngredients('apple', 'orange', 'banana');
+    addIngredients('peach', 'kiwi', 'tomato');
+    displayJuice();
+}
+
+makeJuice("big");
+   
