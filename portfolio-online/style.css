@@ -689,3 +689,33 @@ h3.my-profession
         margin-left: 0;
     }
 }
+@media(max-width:991px)
+{
+     .portfolio .portfolio-item,
+     .contact .contact-info-item
+     {
+        flex: 0 0 100%;
+        max-width: 100%;
+     }
+     .about .about-content .education,
+     .about .about-content .experience,
+    .home .home-info 
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img{
+        display: none;
+    }
+}
+@media(max-width:948px)
+{
+    .about .about-content .personal-info,
+    .about .about-content .skills
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+}

@@ -6,7 +6,8 @@
 nav {
     display: flex;
     flex-direction: row;
-    height: 90px;
+    flex-wrap: wrap;
+    height: auto;
     align-items: center;
     background-color: lightgreen;
     background-image: url(card-pattern.png);
