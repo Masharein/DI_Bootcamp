@@ -128,34 +128,7 @@ class TV {
   
   // Part III
   
-  function TV(brand, channel = 1, volume = 50) {
-    this.brandTV = brand;
-    this.channelTV = channel;
-    this.volumeTV = volume;
-  
-    this.increaseVolume = function() {
-      this.volumeTV++;
-      if (this.volumeTV > 100) this.volumeTV = 100;
-    };
-  
-    this.decreaseVolume = function() {
-      this.volumeTV--;
-      if (this.volumeTV < 0) this.volumeTV = 0;
-    };
-  
-    this.setChannel = function(channel) {
-      if (channel <= 50) this.channelTV = channel;
-    };
-  
-    this.resetTV = function() {
-      this.channelTV = 1;
-      this.volumeTV = 50;
-    };
-  
-    this.status = function() {
-      return `${this.brandTV} at channel ${this.channelTV}, volume ${this.volumeTV}`;
-    };
-  }
+
   
   const panasonicTV = new TV('Panasonic');
   panasonicTV.increaseVolume();
