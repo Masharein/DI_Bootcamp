@@ -56,6 +56,7 @@ ul
     z-index: 0;
     overflow-y: auto;
     overflow-x: hidden;
+    transition: all 0.3s ease;
 }
 .section.back-section
 {
@@ -177,6 +178,7 @@ ul
     justify-content: center;
     align-items: center;
     z-index: 10;
+    transition: all 0.3s ease;
 }
 
 .aside .logo 
@@ -225,7 +227,7 @@ ul
     top: 0;
     right: 0;
 }
-.aside .nav-toogler
+.aside .nav-toggler
 {
     height: 40px;
     width: 45px;
@@ -239,9 +241,10 @@ ul
     display: none;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 
 } 
-.aside .nav-toogler span
+.aside .nav-toggler span
 {
     height: 2px;
     width:18px;
@@ -249,7 +252,11 @@ ul
     display: inline-block;
     position: relative;
 }
-.aside .nav-toogler span::before
+.aside .nav-toggler.open span
+{
+    background: transparent;
+}
+.aside .nav-toggler span::before
 {
     content: '';
     height: 2px;
@@ -259,7 +266,12 @@ ul
     top: -6px;
     left: 0;
 }
-.aside .nav-toogler span::after
+.aside .nav-toggler.open span::before
+{
+    transform: rotate(45deg);
+    top: 0;
+}
+.aside .nav-toggler span::after
 {
     content: '';
     height: 2px;
@@ -268,6 +280,11 @@ ul
     position: absolute;
     top: 6px;
     left: 0;
+}
+.aside .nav-toggler.open span::after
+{
+    transform: rotate(-45deg);
+    top: 0;
 }
 .aside .nav 
 {
@@ -436,7 +453,6 @@ h3.my-profession
 }
 .about .about-content .personal-info .buttons .btn
 {
-    margin-right: 15px;
     margin-top: 10px;
 }
 .about .about-content .skills
@@ -712,9 +728,26 @@ h3.my-profession
     {
         left:-270px;
     }
-    .main-content
+    .aside.open
     {
-        padding-left: 0;
+        left: 0;
+    }
+    .aside .nav-toggler
+    {
+        display: flex;
+        left: 30px;
+    }
+    .aside .nav-toggler.open
+    {
+        left: 300px;
+    }
+    .section
+    {
+        left: 0;
+    }
+    .section.open
+    {
+        left: 270px;
     }
     .about .about-content .personal-info .info-item p span 
     {
