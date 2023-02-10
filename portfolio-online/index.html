@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!---Style Switcher-->
-    <link rel="stylesheet" href="color-1.css" class=" alternate-style" title="color-1" disabled>
-    <link rel="stylesheet" href="color-2.css" class=" alternate-style" title="color-2" disabled>
-    <link rel="stylesheet" href="color-3.css" class=" alternate-style" title="color-3" disabled>
-    <link rel="stylesheet" href="color-4.css" class=" alternate-style" title="color-4" disabled>
-    <link rel="stylesheet" href="color-5.css" class=" alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="style-switcher.css">
 </head>
 <body>
@@ -28,11 +28,11 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
                 <!-- <li><a href="#"><i class="fa fa-list"></i>Services</a></li> -->
-                <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
                 <li><a href="https://www.linkedin.com/in/maria-medyanik-43bab8259/"><i class="fa-brands fa-linkedin-in"></i>My Linkendn</a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=100006739487317"><i class="fa-brands fa-facebook"></i>My Facebook</a></li>
                 <li><a href="https://github.com/Masharein"><i class="fa-brands fa-github"></i>My Github</a></li>
@@ -42,15 +42,13 @@
         <!-- Main Content Start -->
         <div class="main-content">
             <!-- Home Section Start -->
-            <section class="home section">
+            <section class="home active section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
                             <h3 class="hello">Hello, my name is <span class="name">Maria Medyanik</span></h3>
-                            <h3 class="my-profession">I' m a <span class="typing">Full-Stack Developer</span></h3>
-                            <p>I am a Full-Stack Developer located in Israel with an exciting background 
-                            as I am a Pediatrician and Ultrasound specialist. Well-organized hard-working person, problem solver with 
-                            high attention to details.</p>
+                            <h3 class="my-profession">I' m a <span class="typing"></span></h3>
+                            <p>Experienced full-stack developer and licensed Doctor with a passion for creating innovative and user-friendly technology solutions. Well-organized hard-working person, problem solver with high attention to details.</p>
                             <a href="#contact" class="btn hire-me">Hire me</a>
                         </div>
                         <div class="home-img padd-15">
@@ -61,7 +59,7 @@
             </section>
             <!-- Home Section End -->
             <!-- About Section Start -->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -73,9 +71,7 @@
                             <div class="row">
                                 <div class="about-text padd-15">
                                     <h3>I am Maria Medyanik, <span>Full-Stack Developer</span></h3>
-                                    <p> I am a Full-Stack Developer located in Israel with an exciting background 
-                                        as I am a Pediatrician and Ultrasound specialist. Well-organized hard-working person, problem solver with high attention to details.  Fan of sports, nature, animals and new-knowledge. A family person and mother of the sweetiest girl.
-                                        Interested in working on ambitious projects with positive people.</p>
+                                    <p> Experienced full-stack developer and licensed Doctor with a passion for creating innovative and user-friendly technology solutions. Proficient in a range of programming languages and technologies, including JavaScript, React.js, Node.js. Proven track record of delivering high-quality projects on-time and within budget. Well-organized hard-working person, problem solver with high attention to details.  Fan of sports, nature, animals and new-knowledge. A family person and mother of the sweetiest girl. Interested in working on ambitious projects with positive people.</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -249,7 +245,7 @@
                     </section>
                     <!-- About Section End -->
                    <!-- Portfolio Section Start -->    
-                    <section class="portfolio section">
+                    <section class="portfolio section" id="portfolio">
                         <div class="container">
                             <div class="row">
                                 <div class="section-title padd-15">
@@ -311,7 +307,7 @@
                     </section>
                     <!-- Portfolio Section End -->
                     <!-- Contact Section Start -->
-                    <section class="contact section">
+                    <section class="contact section" id="contact">
                         <div class="container">
                             <div class="row">
                                 <div class="section-title padd-15">
@@ -392,11 +388,11 @@
     <!-- Main Conteiner End -->
     <!---Style Switcher Start--->
     <div class="style-switcher">
-        <div class="style-switcher-toogler s-icon">
+        <div class="style-switcher-toggler s-icon">
             <i class="fas fa-cog fa-spin"></i>
         </div>
         <div class="day-night s-icon">
-            <i class="fas fa-moon"></i>
+            <i class="fas"></i>
         </div>
         <h4>Theme Colors</h4>
         <div class="colors">
@@ -409,6 +405,7 @@
     </div>
     <!---Style Switcher End--->
     <!-- JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
     <script src="style-switcher.js"></script>
 </body>
