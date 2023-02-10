@@ -65,7 +65,6 @@ function updateNav(element)
         {
             navList[i].querySelector("a").classList.add("active");
         }
-
     }
 }
 document.querySelector(".hire-me").addEventListener("click", function()
