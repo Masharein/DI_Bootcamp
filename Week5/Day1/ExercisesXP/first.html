@@ -1,0 +1,26 @@
+<!-- 🌟 Exercise 1 : HTML Form
+Instructions
+Hint : Read about sending form data using the HTTP protocol -->
+<!-- Create a form like the one above. The form should contain three inputs:
+a small text input asking for a name,
+a larger textarea input to write a message,
+a submit input (“Send”)
+When you click the Send button, the form will be submitted with a GET method. (you can use the same HTML file for the action url)
+Where will the sent data appear? -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="GET" action="first.html">
+        <p>Name:<br><input type="text" name="name"></p>
+        <p>Comments:<br><textarea name="comments"></textarea></p>
+        <p><button type="submit">Send</button></p>
+    </form>
+</body>
+</html>
