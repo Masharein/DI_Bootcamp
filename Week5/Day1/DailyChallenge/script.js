@@ -3,11 +3,9 @@ console.log(theForm)
 theForm.addEventListener("submit", checkTheValue);
 function checkTheValue(evt) {
     evt.preventDefault(); 
-    const valueInputName = evt.target.name.value;
-    const valueInputLastName = evt.target.lastname.value;
-    let newObject = []
-    newObject.push(valueInputName, valueInputLastName)
-    const stringifiedObject = JSON.stringify(newObject)
+    const name = document.querySelector('#name').value;
+    const lastName = document.querySelector('#lastname').value;
+    const stringifiedObject = JSON.stringify({name, lastName})
     const para =  document.createElement("p");
     const text = document.createTextNode(stringifiedObject)
     para.appendChild(text);
