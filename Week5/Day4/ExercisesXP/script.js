@@ -40,4 +40,4 @@ asyncCall();
 
 // calling
 // Promise {<pending>}
-// фаеук 2 sec resolved
+// after 2 sec resolved
