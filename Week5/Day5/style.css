@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+    background-image: url("https://i.giphy.com/media/TxVVB6PfWMjE4/200.webp");
+    font-family: 'Helvetica Neue';
+    color: yellow;
+    text-align: center;
+    /* z-index: -1; */
+  }
+  
+  .logo {
+    color: yellow;
+    font-size: 100px;
+    width: 800px;
+    height: 200px;
+    margin:  0 auto; 
+    z-index: 1;
+  }
+  
+  
+  .info-container{
+    border: 3px solid yellow;
+    border-radius: 15px;
+    width: 600px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: -25px;
+  }
+  
+  
+  #button{
+      margin-top: 20px;
+      border: 3px solid yellow;
+      border-radius: 10px;
+      width: 180px;
+      height: 40px;
+      font-weight: bold;
+      font-size: 20px;
+      cursor: pointer;
+  }
+  
+  
+  button:focus {
+      outline:0;
+  }
+  
+  #name{
+      color: white;
+      font-size: 30px;
+      
+  }
+  
+  #height{
+      color: white;
+      font-size: 20px;
+  }
+  
+  #gender{
+      color: white;
+      font-size: 20px;
+  }
+  
+  #birth-year{
+      color: white;
+      font-size: 20px;
+  }
+  
+  #home-world{
+      color: white;
+      font-size: 20px;
+  }
+  
+  
+  p{
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+  }
+  

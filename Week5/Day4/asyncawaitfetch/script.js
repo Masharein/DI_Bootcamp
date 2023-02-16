@@ -17,7 +17,7 @@ async function getUsers () {
         const users = await response.json(); //json() method brings back a promise
         displayUsers(users);
     } catch (err) {
-        console.log("ERROR");
+        console.erorr("ERROR");
     }
 }
 
