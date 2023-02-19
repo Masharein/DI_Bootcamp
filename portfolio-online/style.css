@@ -628,7 +628,7 @@ h3.my-profession
 {
     width:100%;
     display: block;
-    margin-bottom:20px;
+    /* margin-bottom:0px; */
 }
 /* contacts */
 .contact-title 
