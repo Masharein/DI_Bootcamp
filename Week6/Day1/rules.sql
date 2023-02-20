@@ -58,18 +58,56 @@
 
 -- UPDATE actors SET number_oscars = number_oscars + 1 WHERE actor_id = 1;
 
+-- -- SELECT * FROM actors;
+
+-- -- UPDATE actors 
+-- -- SET last_name = 'DEF' 
+-- -- WHERE actor_id = 5
+-- -- RETURNING *; --show all he columns of the record that was changed
+
+-- -- DELETE FROM actors WHERE first_name='Lea'
+
+-- -- INSERT INTO actors (first_name, last_name, date_birth, number_oscars)
+-- -- VALUES ('John', 'ABC', '1999-01-08', 2)
+-- -- RETURNING *;
+
+-- -- -- AS means ALIAS - shown temporarily as date_of_birth
+-- -- SELECT date_birth AS date_of_birth FROM actors;
 -- SELECT * FROM actors;
 
--- UPDATE actors 
--- SET last_name = 'DEF' 
--- WHERE actor_id = 5
--- RETURNING *; --show all he columns of the record that was changed
+-- ALTER TABLE actors ADD COLUMN salary INT DEFAULT 0;
+-- ALTER TABLE actors ADD COLUMN nationality VARCHAR(100);
 
--- DELETE FROM actors WHERE first_name='Lea'
+-- -- UPDATE THE SALARY OF THE ACTORS SO THAT IT WILL BE PROPORTIONATE TO THE NUMBERS-OSCARS
+-- UPDATE actors
+-- SET salary = 1000000*number_oscars;
 
--- INSERT INTO actors (first_name, last_name, date_birth, number_oscars)
--- VALUES ('John', 'ABC', '1999-01-08', 2)
+-- UPDATE actors
+-- SET nationality = 'American';
+
+-- -- UPDATE THE nationality of the actors that have the id 2 or 3
+-- UPDATE actors
+-- SET nationality = 'English'
+-- WHERE actor_id = 1
 -- RETURNING *;
+-- -- RETURNING *
+-- -- SEE ALL THE COLUMS OF THE UPDATED ROW
 
--- -- AS means ALIAS - shown temporarily as date_of_birth
--- SELECT date_birth AS date_of_birth FROM actors;
+-- -- RETURNING first_name, last_name
+-- -- SEE THE COLUMS first_name, last_name OF THE UPDATED ROW
+
+
+
+
+
+
+-- -- delete all the actors from the table, without restarting the identity
+-- DELETE FROM actors;
+
+-- INSERT INTO actors 
+-- (first_name, last_name,date_birth,number_oscars, salary, nationality) 
+-- VALUES('abc', 'abc', '2022-03-31', 1, 20, 'French')
+-- RETURNING *
+
+-- -- delete all the records and restart the SERIAL column
+-- TRUNCATE TABLE actors RESTART IDENTITY;
