@@ -8,9 +8,13 @@ INNER JOIN language
 ON film.language_id = language.language_id 
 -- Try your query with different joins:
 -- Get all films, even if they don’t have languages.
-SELECT title FROM film  
+SELECT film.title, film.description, language.name
+FROM film
+LEFT JOIN language ON film.language_id = language.language_id;
 -- Get all languages, even if there are no films in those languages.
-SELECT name FROM language
+SELECT language.language_id, language.name, language.last_update, film.language_id
+FROM language
+LEFT JOIN film ON language.language_id = film.language_id;
 -- Create a new table called new_film with the following columns : id, name. Add some new films to the table.
 CREATE TABLE new_film(
      id INTEGER NOT NULL PRIMARY KEY,
@@ -43,10 +47,15 @@ CREATE TABLE customer_review(
   ); 
  -- Add 2 movie reviews. Make sure you link them to valid objects in the other tables.
 
-INSERT INTO customer_review (film_id, language_id, title, score, review_text)
-VALUES (1, 1, 'Great movie!', 9, 'I really enjoyed this movie. The acting was great and the plot was very engaging.', CURRENT_TIMESTAMP);
-
-INSERT INTO customer_review (film_id, language_id, title, score, review_text)
-VALUES (2, 2, 'Muy buena pelicula', 8, 'Me encanto esta pelicula. La trama es muy interesante y los actores son fantasticos.');
-
+INSERT INTO customer_review (review_id, film_id, language_id, title, score, review_text)
+VALUES (1, 1, 1, 'Great movie!', 9, 'I really enjoyed this movie. The acting was great and the plot was very engaging.'),
+       (2, 2, 2, 'Muy buena pelicula', 8, 'Me encanto esta pelicula. La trama es muy interesante y los actores son fantasticos.');
+SELECT * FROM customer_review;
+SELECT * FROM new_film
 -- Delete a film that has a review from the new_film table, what happens to the customer_review table?
+ALTER TABLE customer_review
+DROP CONSTRAINT customer_review_film_id_fkey;
+ALTER TABLE customer_review
+ADD CONSTRAINT customer_review_film_id_fkey
+FOREIGN KEY (film_id) REFERENCES new_film (id) ON DELETE CASCADE;
+DELETE FROM new_film WHERE id = 2;
