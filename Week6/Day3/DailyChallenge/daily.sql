@@ -113,7 +113,7 @@ FROM Student
 JOIN Library ON student.student_id = library.student_fk_id
 JOIN Book ON book.book_id = library.book_fk_id;
 -- Select the average age of the children, that borrowed the book Alice in Wonderland
-SELECT AVG(student.age)
+SELECT ROUND(AVG(student.age), 1)
 FROM Student
 JOIN Library ON student.student_id = library.student_fk_id
 JOIN Book ON book.book_id = library.book_fk_id
