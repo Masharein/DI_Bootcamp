@@ -20,7 +20,7 @@ for (let item of cartItems) {
 
   // Create a new LI element for the item
   let li = document.createElement("li");
-  li.textContent = `${name} x${quantity} - ${price} each`;
+  li.textContent = `${name} x${quantity} - ${price}`;
 
   // Add the LI element to the UL element
   cartList.appendChild(li);

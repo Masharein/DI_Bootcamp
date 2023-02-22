@@ -85,7 +85,8 @@ class Product {
         const index = cart.findIndex(item => item.id === product.id);
         if (index !== -1) {
           // if product already exists, update its quantity
-          alert("You can add only one product")
+          cart[index].quantity++;
+          // alert("You can add only one product")
         } else {
           // if product doesn't exist, add it to cart
           cart.push({ id: product.id, name: product.name, price: product.price, quantity: 1 });
