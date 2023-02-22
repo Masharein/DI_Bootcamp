@@ -1,0 +1,13 @@
+#container {
+    display : flex;
+}
+
+.product {
+    border: 0.2rem solid black;
+    margin : 1rem;
+    padding: 1rem
+}
+
+img {
+    width: 70%;
+}
