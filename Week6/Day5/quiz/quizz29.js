@@ -4,38 +4,38 @@
 //     * Use the documentation of the API : https://jsonplaceholder.typicode.com/guide/
 //     * Use the fetch API documentation: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#uploading_json_data
 //     * Use the new FormData documentation with Object.fromEntries() : https://gomakethings.com/the-object.fromentries-method-in-vanilla-js/
-
-// Retrieve the form element and add a submit event listener to it
-const form = document.querySelector('form');
-form.addEventListener('submit', postData);
-
-// Define the function to handle form submission
-async function postData(event) {
-  event.preventDefault();
-
-  // Create a new FormData object from the form data
-  const formData = new FormData(event.target);
-
+const sendData = async (e) => {
+  e.preventDefault()
+  const formData = new FormData(e.target)
+  let formObj = Object.fromEntries(formData);
+  console.log(formObj);
+  const url = `https://jsonplaceholder.typicode.com/posts`
   try {
-    const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
-      method: 'POST',
-      body: formData
-    });
-
-    if (!response.ok) {
-      throw new Error(`Bad result`);
-    }
-
-    const data = await response.json();
-
-    // Display the response data on the DOM
-    const output = document.querySelector('#output');
-    const result = Object.entries(data).map(([key, value]) => {
-      return `<p>${key}: ${value}</p>`;
-    });
-
-    output.innerHTML = result;
+      const result = await fetch(url, {
+          method: 'POST',
+          body: JSON.stringify(formObj),
+          headers: { 'Content-type': 'application/json; charset=UTF-8', }
+      })
+      if (result.ok) {
+          const data = await result.json();
+          displayData(data);
+      } else {
+          throw new Error("something is wrong")
+      }
   } catch (error) {
-    console.error(error);
+      console.log(error)
+  }
+
+}
+
+const displayData = (data) => {
+  const output = document.getElementById('output');
+  for (let key in data) {
+      const listItem = document.createElement("li");
+      const text = document.createTextNode(`${key} : ${data[key]}`)
+      listItem.appendChild(text);
+      output.appendChild(listItem);
   }
 }
+
+document.forms[0].addEventListener('submit', sendData)
