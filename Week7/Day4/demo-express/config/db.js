@@ -14,6 +14,12 @@ const db = knex({
   }
 })
 
+
+module.exports = {
+db,
+
+}
+
 db('products')
 .select('id','name','price')
 .then(rows => {
