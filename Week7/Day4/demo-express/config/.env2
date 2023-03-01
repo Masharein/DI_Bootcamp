@@ -1,0 +1,6 @@
+PORT=5002
+DB_HOST=lucky.db.elephantsql.com
+DB_PORT=5432
+DB_USER=yzdablpx
+DB_PASS=lWQNYdpXSsDVRIelxWzb7wvzyib-bYgD
+DB_NAME=yzdablpx
