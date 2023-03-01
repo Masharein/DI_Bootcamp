@@ -16,18 +16,17 @@ const db = knex({
 
 
 module.exports = {
-db,
-
+db
 }
 
-db('products')
-.select('id','name','price')
-.then(rows => {
-  console.log(rows);
-})
-.catch(err => {
-  console.log(err);
-})
+// db('products')
+// .select('id','name','price')
+// .then(rows => {
+//   console.log(rows);
+// })
+// .catch(err => {
+//   console.log(err);
+// })
 
 
 // Delete

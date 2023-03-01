@@ -3,4 +3,7 @@ const {_getAllProducts} = require('../controllers/products.js')
 
 const router = express.Router();
 
-router.get('/api'
+router.get('/', _getAllProducts)
+
+
+module.exports = router
