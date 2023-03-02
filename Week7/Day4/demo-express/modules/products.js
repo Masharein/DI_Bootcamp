@@ -1,17 +1,44 @@
-const {db} = require('../config/db.js')
+const {db} = require('../config/db.js');
+
 const getAllProducts = () => {
-    return db('products')
-    .select('id', 'name', 'price')
-    .orderBy('name');
+  return db('products')
+  .select('id','name','price')
+  .orderBy('name');
 }
 
 const getProductById = (pid) => {
-    return db('products')
-    .select('id', 'name', 'price')
-    .where({id:pid})
+  return db('products')
+  .select('id','name','price')
+  .where({id:pid})
 }
 
-    module.exports = {
-        getAllProducts,
-        getProductById
-    }
+// product = {name:'Icar', price:1000}
+const insertProduct = (product) => {
+  return db('products')
+  .insert(product)
+  .returning('*')
+}
+
+const updateProduct = (pid, product) => {
+  return db('products')
+  .update(product)
+  .where({id:pid})
+  .returning('*')
+}
+
+const deleteProduct = (id) => {
+  return db('products')
+  .del()
+  .where({id:id})
+  .returning('*')
+}
+
+
+
+module.exports = {
+  getAllProducts,
+  getProductById,
+  insertProduct,
+  updateProduct,
+  deleteProduct
+}
