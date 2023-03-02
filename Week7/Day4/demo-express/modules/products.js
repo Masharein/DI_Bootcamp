@@ -5,6 +5,13 @@ const getAllProducts = () => {
     .orderBy('name');
 }
 
+const getProductById = (pid) => {
+    return db('products')
+    .select('id', 'name', 'price')
+    .where({id:pid})
+}
+
     module.exports = {
-        getAllProducts
+        getAllProducts,
+        getProductById
     }
