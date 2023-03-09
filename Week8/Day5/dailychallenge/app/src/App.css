@@ -1,0 +1,121 @@
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
+}
+
+header {
+  padding: 10px 0;
+  background-color: red;
+  margin-bottom: 5px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  color: white;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  font-weight: bold;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to left top, blue, red) center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  height: 50px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+  width: 100%;
+}
+
+.jumbotron p {
+  text-align: center;
+  margin: 0 0 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .jumbotron {
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotron {
+    margin-top: 110px;
+  }
+  .jumbotron p {
+    margin: 0;
+    font-size: 15px;
+  }
+}
+
+.card {
+  background: #fff;
+  border: 5px solid #fff;
+  border-radius: 2px;
+  margin: 40px 20px;
+  position: relative;
+  height: 300px;
+  width: 250px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  transition: box-shadow 0.1s ease-in-out;
+  text-align: left;
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px #999, 0 12px 24px #999;
+  height: 300px;
+  width: 250;
+
+  cursor: pointer;
+}
+
+.card>.img-container {
+  height: 80%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card>.img-container>img {
+  width: 80%
+}
+
+.card>.content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 15px;
+  background: #6CADDC;
+}
+
+.card>.img-content>ul {
+  list-style-type: none;
+}
+
+.animate {
+  animation: shake 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .card:hover {
+    height: 300px;
+    width: 250px;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  }
+}
