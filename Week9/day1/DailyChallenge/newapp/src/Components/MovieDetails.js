@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import './Movies.css'
 
 const MovieDetails = ({ selectedMovie }) => {
     if(!selectedMovie) {
