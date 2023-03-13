@@ -2,9 +2,9 @@ import React from 'react'
 
 const SearchBox = ({searchChange}) => {
     return (
-        <div className='pa2'>
+        <div style={{display:'flex', justifyContent: 'center'}}>
         <input 
-        className='pa3 ba b--green bg-lightest-blue'
+        style={{height:'40px', width: '300px', textAlign: 'center', marginBottom: '10px'}}
         type='search' 
         placeholder='search robot'
         onChange={searchChange}/>
