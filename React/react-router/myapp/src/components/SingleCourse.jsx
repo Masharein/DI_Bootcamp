@@ -10,7 +10,7 @@ const SingleCourse = () => {
         if (!course) {
             navigate('..', {relative: 'path'})
         }
-    }, [course])
+    }, [course, navigate])
 
     // if(!course) {
     //     return (
